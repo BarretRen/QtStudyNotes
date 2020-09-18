@@ -20,10 +20,9 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#centralwidget { background: rgba(32, 80, 96, 100); }
+   <string notr="true">#centralwidget { background: rgba(32, 80, 96, 100); border-image: url(:/images/login_bg.png);}
 #topPanel {background-color: qlineargradient(spread:reflect, x1:0.5,
 y1:0, x2:0, y2:0, stop:0 rgba(91, 204, 233, 100), stop:1 rgba(32, 80, 96, 100));}
-#logo {border:1px solid}
 #loginForm {background: rgba(0, 0, 0, 80);border-radius: 8px}
 QLabel { color: white; }
 QLineEdit { border-radius: 3px;}
@@ -93,6 +92,16 @@ QPushButton:hover { background-color: #66c011; }</string>
          <property name="text">
           <string/>
          </property>
+         <property name="icon">
+          <iconset resource="loginRes.qrc">
+           <normaloff>:/icon/restart_icon.png</normaloff>:/icon/restart_icon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
         </widget>
        </item>
        <item>
@@ -114,6 +123,16 @@ QPushButton:hover { background-color: #66c011; }</string>
          </property>
          <property name="text">
           <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="loginRes.qrc">
+           <normaloff>:/icon/shutdown_icon.png</normaloff>:/icon/shutdown_icon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
          </property>
         </widget>
        </item>
@@ -160,6 +179,9 @@ QPushButton:hover { background-color: #66c011; }</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="loginRes.qrc">:/images/logo.png</pixmap>
         </property>
        </widget>
       </item>
@@ -350,12 +372,14 @@ QPushButton:hover { background-color: #66c011; }</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>23</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="loginRes.qrc"/>
+ </resources>
  <connections/>
 </ui>
