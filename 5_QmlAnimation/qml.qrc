@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>animator.qml</file>
+        <file>horse_1.png</file>
+        <file>spriteHorse.qml</file>
+    </qresource>
+</RCC>
