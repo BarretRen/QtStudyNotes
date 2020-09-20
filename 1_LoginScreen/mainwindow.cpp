@@ -3,6 +3,7 @@
 #include <QMessageBox>
 #include <myclass.h>
 #include <QtDebug>
+#include <QGraphicsBlurEffect>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
@@ -19,6 +20,10 @@ MainWindow::MainWindow(QWidget* parent)
     {
         QMessageBox::information(nullptr, "Hello", "MyClass slot function is called");
     });
+    //设置logo的图形效果
+    QGraphicsBlurEffect* blur = new QGraphicsBlurEffect();
+    blur->setBlurRadius(8);
+    ui->logo->setGraphicsEffect(blur);
 }
 
 MainWindow::~MainWindow()
