@@ -1,2 +1,3 @@
-# QtExampleCode
-example code for QT5 learning
+# QtStudyNotes
+
+QT notes and examples during the QT learning.
